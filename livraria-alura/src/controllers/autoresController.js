@@ -28,13 +28,13 @@ class AutorController {
 	}
 
 	static cadastrarAutor = async (req, res, next) => {
+		console.log('cheguei aqui')
 		const autor = new autores(req.body)
 		try {
 			const autorSalvo = await autor.save()
-			res.status(200).send(autorSalvo.toJSON())
+			res.status(201).send(autorSalvo.toJSON())
 		} catch (erro) {
 			next(erro)
-
 		}
 	}
 
