@@ -1,4 +1,4 @@
-import RequisicaoIncorreta from '../erros/RequisicaoIncorreta'
+import RequisicaoIncorreta from '../erros/RequisicaoIncorreta.js'
 
 async function paginar (req, res, next) {
 	try {
