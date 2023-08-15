@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "root",
+    "username": "localhost",
     "password": "",
     "database": "escola_ingles",
     "host": "127.0.0.1",
