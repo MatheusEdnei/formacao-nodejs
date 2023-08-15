@@ -109,3 +109,7 @@ dist
 
 # Environments
 .env
+
+# File
+*.zip
+orm-sequelize-projeto-aula-2/
