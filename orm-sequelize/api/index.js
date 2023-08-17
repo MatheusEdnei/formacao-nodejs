@@ -1,11 +1,16 @@
-const express = require('express')
-const routes = require('./routes')
+//routes/index.js
 
-const app = express()
-const port = 3000
+const bodyParser = require('body-parser')
 
-routes(app)
+const pessoas = require('./pessoasRoute')
+const niveis = require('./niveisRoute')
+const turmas = require('./turmasRoute')
 
-app.listen(port, () => console.log(`O servidor esta rodando na porta ${port}`))
-
-module.exports = app
+module.exports = app => {
+ app.use(
+   bodyParser.json(),
+   pessoas,
+   niveis,
+   turmas
+   )
+ }
